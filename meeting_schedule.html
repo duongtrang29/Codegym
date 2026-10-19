@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 25px;
+            background-color: #f9fbfd;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px 16px;
+            text-align: left;
+        }
+        th {
+            background-color: #eef2f7;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #f0f7ff;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tiêu đề h1 theo đúng yêu cầu đề bài -->
+    <h1>Lịch họp công ty</h1>
+
+    <!-- Bảng thông tin lịch họp gồm các cột: Ngày, Giờ, Nội dung cuộc họp -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ngày Thứ Hai có 2 cuộc họp khác giờ -> Dùng rowspan="2" ở cột Ngày -->
+            <tr>
+                <td rowspan="2"><b>Thứ Hai (20/10)</b></td>
+                <td>08:30 - 09:30</td>
+                <td>Họp giao ban đầu tuần toàn công ty</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:30</td>
+                <td>Đánh giá tiến độ dự án Sprint 1</td>
+            </tr>
+
+            <!-- Cuộc họp Thứ Ba kéo dài nhiều giờ -> Gộp 2 ô Giờ và Nội dung bằng colspan="2" -->
+            <tr>
+                <td><b>Thứ Ba (21/10)</b></td>
+                <td colspan="2" class="highlight">08:30 - 17:00 (Cả ngày): Hội thảo đào tạo nâng cao công nghệ nội bộ</td>
+            </tr>
+
+            <!-- Ngày Thứ Tư -->
+            <tr>
+                <td><b>Thứ Tư (22/10)</b></td>
+                <td>09:00 - 10:30</td>
+                <td>Họp trao đổi yêu cầu với khách hàng</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
