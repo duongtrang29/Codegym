@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    background-color: #f7f9fc;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+}
+
+/* Mục 2: list-style-type: square */
+.list-square {
+    list-style-type: square;
+}
+
+/* Mục 3: list-style-type: upper-roman */
+.list-roman {
+    list-style-type: upper-roman;
+}
+
+/* Mục 4: list-style-image (dùng trực tiếp mã vector SVG hình tròn xanh làm bullet) */
+.list-image {
+    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="%2327ae60"><circle cx="12" cy="12" r="10"/></svg>');
+}
+
+/* Mục 5: So sánh list-style-position */
+.box-demo {
+    background-color: #ffffff;
+    border: 1px dashed #3498db;
+    width: 320px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.pos-outside {
+    list-style-position: outside;
+}
+
+.pos-inside {
+    list-style-position: inside;
+}
+
+/* Mục 6: Thuộc tính rút gọn list-style */
+.list-short {
+    list-style: circle inside;
+}
+
+/* Mục 7: Định kiểu màu sắc, nền, padding và margin */
+.list-color-box {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 30px;
+    margin: 15px 0;
+    width: 280px;
+    border-radius: 6px;
+}
+
+.list-color-box li {
+    margin: 8px 0;
+}
+
+/* Mục 8: Lộ trình học lập trình Web (Bài tập tổng hợp) */
+.web-roadmap {
+    list-style: decimal inside;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    padding: 20px 25px;
+    margin: 15px 0;
+    width: 340px;
+    border-left: 5px solid #2e7d32;
+    border-radius: 4px;
+}
+
+.web-roadmap li {
+    font-weight: bold;
+    margin: 10px 0;
+}
