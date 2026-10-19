@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Nhúng CSS vào HTML</title>
+
+    <!-- Phần 3: External CSS (Nhúng file CSS bên ngoài bằng thẻ <link>) -->
+    <link rel="stylesheet" href="styles_embed.css">
+
+    <!-- Phần 2: Internal CSS (Viết mã CSS bên trong thẻ <style> ở phần <head>) -->
+    <style>
+        .internal-title {
+            color: #d35400; /* Màu cam */
+            font-size: 22px;
+        }
+        .internal-text {
+            color: #8e44ad; /* Màu tím */
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9fbfd;">
+
+    <h1>Thực hành 3 cách nhúng CSS vào trang web</h1>
+
+    <!-- PHẦN 1: INLINE CSS (Dùng trực tiếp thuộc tính style bên trong thẻ HTML) -->
+    <div class="box">
+        <h2 style="color: #e74c3c; font-size: 22px;">1. Tiêu đề sử dụng Inline CSS (Màu đỏ)</h2>
+        <p style="color: #2980b9;">Đây là đoạn văn bản được định dạng màu xanh dương bằng Inline CSS.</p>
+    </div>
+
+    <!-- PHẦN 2: INTERNAL CSS (Dùng thẻ style trong file) -->
+    <div class="box">
+        <h2 class="internal-title">2. Tiêu đề sử dụng Internal CSS (Màu cam)</h2>
+        <p class="internal-text">Đây là đoạn văn bản được định dạng màu tím bằng Internal CSS.</p>
+    </div>
+
+    <!-- PHẦN 3: EXTERNAL CSS (Dùng class từ file styles_embed.css) -->
+    <div class="box">
+        <h2 class="external-title">3. Tiêu đề sử dụng External CSS (Màu xanh lá)</h2>
+        <p class="external-text">Đây là đoạn văn bản được định dạng kiểu nghiêng qua External CSS.</p>
+    </div>
+
+</body>
+</html>

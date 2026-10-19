@@ -1,0 +1,10 @@
+/* External Style: Định kiểu cho Phần 3 */
+.external-title {
+    color: #27ae60; /* Màu xanh lá */
+    font-size: 22px;
+}
+
+.external-text {
+    color: #2c3e50;
+    font-style: italic;
+}
