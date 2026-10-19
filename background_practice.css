@@ -1,0 +1,60 @@
+/* Thiết lập màu nền cho toàn bộ trang web */
+body {
+    background-color: #eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Định dạng tiêu đề và đoạn văn mô tả */
+h1 {
+    margin-bottom: 10px;
+}
+
+p.description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+/* Khối div chứa ảnh nền và căn giữa nội dung */
+.hero-box {
+    width: 80%;
+    max-width: 700px;
+    height: 320px;
+    margin: 0 auto;
+    
+    /* Thiết lập ảnh nền chất lượng cao từ Unsplash */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    
+    /* Căn giữa nội dung theo cả chiều ngang và chiều dọc */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-box h2 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-box p {
+    font-size: 16px;
+    max-width: 80%;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
