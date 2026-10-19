@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f9fa;
+            padding: 30px;
+        }
+        .form-box {
+            background-color: #ffffff;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .gender-options {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .gender-options label {
+            font-weight: normal;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: #1976d2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Đăng Ký Người Dùng</h2>
+
+        <!-- Cài đặt đúng action gửi đến endpoint mẫu và phương thức POST -->
+        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+            
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required />
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male" checked /> Nam</label>
+                    <label><input type="radio" name="gender" value="female" /> Nữ</label>
+                    <label><input type="radio" name="gender" value="other" /> Khác</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Đăng ký</button>
+        </form>
+    </div>
+
+</body>
+</html>
